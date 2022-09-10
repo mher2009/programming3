@@ -2,6 +2,7 @@ class Grass extends LivingCreature {
     
 
     chooseCell(char) {
+        super(x,y)
         this.getNewCoordinates()
         var found = [];
 
