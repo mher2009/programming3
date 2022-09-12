@@ -205,5 +205,3 @@ document.addEventListener('keydown', function (event) {
         player.heal()
     }
 })  
-
-
