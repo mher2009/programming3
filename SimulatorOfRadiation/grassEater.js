@@ -30,7 +30,7 @@ module.exports = class GrassEater extends LivingCreature {
             gen = this.mutated
         }
         this.multiply++;
-        var emptyCells = this.chooseCell(0);
+        var emptyCells = super.chooseCell(0);
         var newCell = random(emptyCells);
 
         if (newCell && this.multiply >= 40) {
@@ -48,7 +48,7 @@ module.exports = class GrassEater extends LivingCreature {
 
     move() {
         this.energy--
-        var emptyCell = this.chooseCell(0)
+        var emptyCell = super.chooseCell(0)
         var newCell = random(emptyCell)
 
         if (newCell && this.energy >= 0) {
@@ -67,7 +67,7 @@ module.exports = class GrassEater extends LivingCreature {
     }
 
     eat() {
-        var emptyCell = this.chooseCell(1)
+        var emptyCell = super.chooseCell(1)
         var newCell = random(emptyCell)
 
         if (newCell) {
