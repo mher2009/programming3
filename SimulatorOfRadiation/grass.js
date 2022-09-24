@@ -1,4 +1,5 @@
-class Grass extends LivingCreature {
+let LivingCreature = require("./livingCreature")
+module.exports = class Grass extends LivingCreature {
     constructor(x, y, mutated) {
         super(x, y)
         this.x = x;
@@ -20,7 +21,6 @@ class Grass extends LivingCreature {
                 [this.x + 2, this.y - 2],
                 [this.x + 2, this.y + 2]
             ]
-
         }
         else {
 
